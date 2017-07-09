@@ -12,24 +12,40 @@ class SPNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+        navigationBar.isHidden = true
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        
+        //如果不是栈底控制器才需要隐藏
+        if childViewControllers.count > 0 {
+            viewController.hidesBottomBarWhenPushed = true
+            
+            //添加返回item
+            if let vc = viewController as? SPBaseViewController {
+                
+                var title = "返回"
+                
+                if childViewControllers.count == 1 {
+                    
+                    title = childViewControllers.first?.title ?? "返回"
+                    
+                }
+                
+                vc.naviItem.leftBarButtonItem = UIBarButtonItem(title: title, target: self, action: #selector(popToParent), isBack:true)
+            }
+        }
+        
+        super.pushViewController(viewController, animated: true)
+        
     }
-    */
+    
+    @objc private func popToParent () {
+        
+        popViewController(animated: true)
+        
+    }
 
 }

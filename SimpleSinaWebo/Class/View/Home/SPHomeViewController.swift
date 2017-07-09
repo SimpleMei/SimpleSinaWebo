@@ -17,20 +17,25 @@ class SPHomeViewController: SPBaseViewController {
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @objc fileprivate func showNext () {
+        
+        
+    }
+
+
+}
+
+extension SPHomeViewController {
+    
+    override func setupUI() {
+        super.setupUI()
+        
+//        let btn : UIButton = UIButton.cz_textButton("好友", fontSize: 16, normalColor: UIColor.darkGray, highlightedColor: UIColor.orange)
+//        btn.addTarget(self, action: @selector(showNext), for: .touchUpInside)
+//        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: btn)
+
+        naviItem.leftBarButtonItem = UIBarButtonItem(title: "好友", target: self, action: #selector(showNext))
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

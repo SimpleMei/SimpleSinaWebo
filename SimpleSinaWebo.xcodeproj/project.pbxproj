@@ -26,6 +26,7 @@
 		81059AEA1EFCC3EB001DDE46 /* SPDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81059AE91EFCC3EB001DDE46 /* SPDiscoverViewController.swift */; };
 		81059AEC1EFCC3FB001DDE46 /* SPProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81059AEB1EFCC3FB001DDE46 /* SPProfileViewController.swift */; };
 		81059AEF1EFCC7D3001DDE46 /* Bundle-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81059AEE1EFCC7D3001DDE46 /* Bundle-Extensions.swift */; };
+		81E0FB981F121E6F00A6CA45 /* UIBarButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E0FB971F121E6F00A6CA45 /* UIBarButton+Extensions.swift */; };
 		81EE02A11EFBC3BA00E26E55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EE02A01EFBC3BA00E26E55 /* AppDelegate.swift */; };
 		81EE02A81EFBC3BA00E26E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81EE02A71EFBC3BA00E26E55 /* Assets.xcassets */; };
 		81EE02BF1EFBC96D00E26E55 /* SPMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EE02BE1EFBC96D00E26E55 /* SPMainViewController.swift */; };
@@ -65,6 +66,7 @@
 		81059AE91EFCC3EB001DDE46 /* SPDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPDiscoverViewController.swift; sourceTree = "<group>"; };
 		81059AEB1EFCC3FB001DDE46 /* SPProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPProfileViewController.swift; sourceTree = "<group>"; };
 		81059AEE1EFCC7D3001DDE46 /* Bundle-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle-Extensions.swift"; sourceTree = "<group>"; };
+		81E0FB971F121E6F00A6CA45 /* UIBarButton+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButton+Extensions.swift"; sourceTree = "<group>"; };
 		81EE029D1EFBC3BA00E26E55 /* SimpleSinaWebo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSinaWebo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81EE02A01EFBC3BA00E26E55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81EE02A71EFBC3BA00E26E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				81059AEE1EFCC7D3001DDE46 /* Bundle-Extensions.swift */,
+				81E0FB971F121E6F00A6CA45 /* UIBarButton+Extensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				81059ADC1EFCC243001DDE46 /* NSString+CZHash.m in Sources */,
 				81059ABB1EFBCB5D001DDE46 /* SPNavigationController.swift in Sources */,
 				81059AE11EFCC243001DDE46 /* UIScreen+CZAddition.m in Sources */,
+				81E0FB981F121E6F00A6CA45 /* UIBarButton+Extensions.swift in Sources */,
 				81059AE01EFCC243001DDE46 /* UILabel+CZAddition.m in Sources */,
 				81059ADE1EFCC243001DDE46 /* UIButton+CZAddition.m in Sources */,
 				81059ADA1EFCC243001DDE46 /* NSObject+CZRuntime.m in Sources */,
